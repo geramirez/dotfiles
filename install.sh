@@ -14,7 +14,7 @@ vim -Es -u $HOME/.vimrc -c "PlugInstall | qa"
 
 # zsh configuration
 sudo apt-get update
-sudo apt-get install -y zsh fonts-powerline
+sudo apt-get install -y zsh fonts-powerline neovim
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
 echo "$(starship init zsh)" >> ~/.zshrc
