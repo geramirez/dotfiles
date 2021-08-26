@@ -5,6 +5,8 @@ exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
 set -x
 
+mkdir -p ~/.config/nvim/
+ln -s $(pwd)/init.vim $HOME/.config/nvim/init.vim
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 ln -s $(pwd)/vimrc $HOME/.vimrc
 ln -s $(pwd)/vim $HOME/.vim
