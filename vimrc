@@ -374,6 +374,10 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
+nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <C-f> :Files<CR>
+
+
 " snippets
 " let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
