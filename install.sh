@@ -20,3 +20,6 @@ sudo apt-get install -y zsh fonts-powerline neovim
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
 echo "$(starship init zsh)" >> ~/.zshrc
+
+echo "what is this?"
+cat /workspaces/.codespaces/shared/environment-variables.json | jq '.ACTION_NAME'
