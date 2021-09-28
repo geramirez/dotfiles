@@ -1,0 +1,3 @@
+cat /workspaces/.codespaces/shared/environment-variables.json | jq '.ACTION_NAME'
+echo $CODESPACE_NAME
+cat /workspaces/.codespaces/shared/environment-variables.json | jq '.DOTFILES_REPOSITORY'
