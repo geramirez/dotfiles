@@ -21,5 +21,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
 echo "$(starship init zsh)" >> ~/.zshrc
 
-echo "what is this?"
-cat /workspaces/.codespaces/shared/environment-variables.json | jq '.ACTION_NAME'
+ln -s $(pwd)/cs_tooling $HOME/.cs_tooling
