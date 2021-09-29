@@ -5,6 +5,9 @@ exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
 set -x
 
+unset GIT_EDITOR
+git config --global core.editor vim
+
 mkdir -p ~/.config/nvim/
 ln -s $(pwd)/init.vim $HOME/.config/nvim/init.vim
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
