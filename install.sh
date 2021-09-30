@@ -7,6 +7,9 @@ set -x
 
 unset GIT_EDITOR
 git config --global core.editor vim
+git config --global push.default simple
+git config --global commit.gpsign true
+git config --global commit.gpgsign true
 
 mkdir -p ~/.config/nvim/
 ln -s $(pwd)/init.vim $HOME/.config/nvim/init.vim
