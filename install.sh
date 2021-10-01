@@ -27,7 +27,4 @@ vim -Es -u $HOME/.vimrc -c "PlugInstall | qa"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo chsh -s "$(which zsh)" "$(whoami)"
 
-
-if [[ -x /workspaces/github/bin/build-ctags ]]; then
-  /workspaces/github/bin/build-ctags
-fi
+sudo gem install ripper-tags && sudo ripper-tags -R
