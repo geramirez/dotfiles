@@ -641,3 +641,5 @@ call plug#end()
 filetype plugin indent on
 
 syntax on
+
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
