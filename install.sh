@@ -10,4 +10,5 @@ sudo apt install -y fish tmux neovim
 
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 
+mkdir -p /home/codespace/.config/nvim/
 mv $(pwd)/init.vim $HOME/.config/nvim/init.vim
