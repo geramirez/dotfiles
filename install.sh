@@ -9,3 +9,5 @@ sudo apt update
 sudo apt install -y fish tmux neovim
 
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
+
+mv $(pwd)/init.vim $HOME/.config/nvim/init.vim
