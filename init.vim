@@ -50,6 +50,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasr/molokai'
+Plug 'github/copilot.vim'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -285,7 +286,10 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite,*node_modules/
 nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <c-n> :NERDTreeToggle<CR>
+
+"" files
+nnoremap <silent> <c-f> :Files<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
