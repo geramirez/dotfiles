@@ -408,13 +408,13 @@ cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
-nmap <leader>y :History:<CR>
+nnoremap <leader>y :History:<CR>
 
 " ale
 let g:ale_linters = {}
 
 " Tagbar
-nmap <silent> <F4> :TagbarToggle<CR>
+nnoremap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 " Disable visualbell
