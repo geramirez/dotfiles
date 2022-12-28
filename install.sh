@@ -11,7 +11,7 @@ sudo apt install -y fish tmux python-dev python3-pip python3-dev python3-pip neo
 
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 
-mkdir -p /home/codespace/.config/nvim/
+mkdir -p  $HOME/.config/nvim/
 mv $(pwd)/init.vim $HOME/.config/nvim/init.vim
 
 nvim +'PlugInstall --sync' +qa
