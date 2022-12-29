@@ -687,3 +687,6 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+' escape vim
+:inoremap jk <esc>
