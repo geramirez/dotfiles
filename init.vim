@@ -51,6 +51,7 @@ Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasr/molokai'
 Plug 'github/copilot.vim'
+Plug 'vim-test/vim-test'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -690,3 +691,10 @@ endif
 
 " escape vim
 :inoremap jk <esc>
+
+
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
