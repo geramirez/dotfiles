@@ -292,6 +292,9 @@ nnoremap <silent> <c-n> :NERDTreeToggle<CR>
 "" files
 nnoremap <silent> <c-f> :Files<CR>
 
+"" AG
+nnoremap <silent> <leader>A :Ag<CR>
+
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
 let Grep_Default_Options = '-IR'
