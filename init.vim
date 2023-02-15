@@ -50,6 +50,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasr/molokai'
+Plug 'morhetz/gruvbox'
 Plug 'github/copilot.vim'
 Plug 'vim-test/vim-test'
 
@@ -192,7 +193,8 @@ set ruler
 set number
 
 let no_buffers_menu=1
-colorscheme molokai
+set background=light
+colorscheme gruvbox
 
 
 " Better command line completion 
