@@ -14,4 +14,6 @@ ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 mkdir -p  $HOME/.config/nvim/
 mv $(pwd)/init.vim $HOME/.config/nvim/init.vim
 
+git config --global --add --bool push.autoSetupRemote true
+
 nvim +'PlugInstall --sync' +qa
