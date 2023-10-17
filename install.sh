@@ -7,7 +7,7 @@ set -x
 
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
-sudo apt install -y fish tmux python-dev python3-pip python3-dev python3-pip neovim ag
+sudo apt install -y fish tmux python-dev python3-pip python3-dev python3-pip neovim silversearcher-ag
 
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 
