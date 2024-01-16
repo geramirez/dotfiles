@@ -82,6 +82,8 @@ Plug 'honza/vim-snippets'
 "" Go Lang Bundle
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
+" markdown 
+Plug 'iamcco/markdown-preview.nvim'
 
 " javascript
 "" Javascript Bundle
